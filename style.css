@@ -1,0 +1,818 @@
+@charset "UTF-8";
+body {display: flex;
+    flex-flow: column nowrap;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 11px;
+	color: #333;
+	background-color: #e5e5e5;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+}
+a:link {
+	color: #4a8de2;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #4a8de2;
+}
+a:hover {
+	text-decoration: none;
+	color: #f7941d;
+}
+a:active {
+	text-decoration: none;
+}
+h1 {
+	margin: 0px 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 18px;
+	color: #1d63bc;
+}
+h2 {
+	margin: 20px 0 0 0;
+	padding: 0;
+	line-height: 36px;
+	font-weight: bold;
+	font-size: 24px;
+	color: #fff;
+}
+h2 .text1 {
+	color: #afb81d;
+}
+h3 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #1c5fb9;
+}
+h4 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFF;
+}
+h5 {
+	margin: 0;
+	padding: 12px 15px 0px 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-size: 16px;
+	color: #FFF;
+	background: #f7941d;
+	border-bottom: #d97f12 1px solid;
+}
+#container {
+	width: 900px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	padding: 0;
+}
+#headerContainer {
+	width: 100%;
+	text-align: left;
+}
+#footer {
+	width: 900px;
+	padding: 0 0px 0 0px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	margin: 0 auto;
+}
+#header {
+	width: 900px;
+	padding: 0 0px 0 0px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	margin: 0 auto;
+}
+#header .bg {
+	background-color:#4d4d4d;
+}
+#header .logo {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+#header .text1 {
+	font-family: Arial, "Times New Roman", Times, serif;
+	color: #000000;
+	vertical-align: middle;
+}
+#header .text2 {
+	font-family: Arial, "Times New Roman", Times, serif;
+	color: #666666;
+	vertical-align: middle;
+}
+#header .leftCol {
+	text-align: left;
+}
+#header .midCol {
+	width:355px;
+	background-color:#000;
+}
+#header .leftCol2 {
+	width:755px;
+	background-color:#3b3b3b;
+}
+#header .midCol2 {
+	width:4px;
+	background-color:#000000;
+}
+#header .rightCol2 {
+	width:141px;
+	background-color:#4d4d4d;
+}
+#header .headingPos {
+	margin-left:20px;
+}
+#header .headingPos2 {
+	width:290px;
+	text-align:left;
+	font-size:14px;
+	padding:5px;
+	display:block;
+	background-color:#cecece;
+	color:#7c7c7c;
+}
+#header .address {
+}
+#header .langbar {
+	color: #FFF;
+	margin: 15px 0;
+}
+#header .langbar a, #header .langbar a:visited {
+	color: #FFF;
+	margin: 0 0.2em 0 0.2em;
+}
+#header .langbar a:hover {
+	color: #f7941d;
+	margin: 0 0.2em 0 0.2em;
+}
+#topNav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+#topNav li {
+	float: left;
+	display: inline;
+	text-align: center;
+	margin: 0px 1px 0px 0px;
+	width: 100px;
+	
+}
+#topNav li a, #topNav li a:link {
+	padding: 7px 5px;
+	font-size: 11px;
+	font-weight: lighter;
+	font-family: Arial, "Times New Roman", Times, serif;
+	color: #FFF;
+	background: #000000;
+	display: block;
+}
+#topNav li a:hover, #topNav li a.navOn {
+	color: #FFF;
+	background: #b2dc3f;
+	display: block;
+}
+#footerContainer {
+	margin: 12px 0 0 0;
+	width: 100%;
+	text-align: left;
+}
+#footer p {
+	font-size: 10px;
+	color: #000;
+	font-family: Arial, "Times New Roman", Times, serif;
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+#footer .footerText {
+	font-size: 10px;
+	color: #b0c437;
+	font-family: Arial, "Times New Roman", Times, serif;
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+#sidebar1 {
+	width: 300px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #FFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	height:230px;
+}
+#sidebar1 .content {
+	margin: 0;
+}
+#sidebar1 .content .catTitleBG {
+	margin: 0;
+	width:300px;
+	height:30px;
+	background: url(images/titleBar_02.jpg) no-repeat;
+}
+#sidebar1 .content .catTitleBG h3 {
+	margin: 0;
+	color:#FFF;
+	font-size:12px;
+	margin-left: 20px;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#sidebar1 .categoryNav {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#sidebar1 .categoryNav li {
+	margin: 0;
+	margin-left:20px;
+	line-height: 20px;
+	display: block;
+	border-bottom: 1px solid #e5e5e5;
+}
+#sidebar1 .categoryNav li a, #sidebar1 .categoryNav li a:link, #sidebar1 .categoryNav li a:visited {
+	color: #666;
+	padding: 0 0px 0px 0px;
+}
+#sidebar1 .categoryNav li a:hover, #sidebar1 .categoryNav li a.navOn {
+	color: #333;
+	padding: 0 0px 0 0px;
+}
+#sidebar1 .contactBox {
+	border-top: 12px solid #1c5eb8;
+	background: #5790de;
+	padding: 15px 10px 15px 20px;
+	color: #FFF;
+}
+#sidebar1 .contactBox h3 {
+	color: #FFF;
+}
+#sidebar1 .contactBox .title {
+	font: 16px;
+}
+#sidebar1 .contactBoxBottom {
+	border: 1px solid #5790de;
+	background: #164b93;
+	padding: 15px 10px 15px 20px;
+	color: #FFF;
+}
+#sidebar1 .contactBoxBottom p {
+	margin: 0;
+}
+#sidebar1 .contactBoxBottom a, #sidebar1 .contactBoxBottom a:link, #sidebar1 .contactBoxBottom a:visited {
+	color: #FFF;
+}
+#sidebar2 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 580px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #FFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	height: 230px;
+}
+#sidebar2 .content {
+	line-height: 18px;
+	margin: 0px 0px 0px 0px;
+}
+#sidebar2 .content h3 {
+	margin: 0;
+	color: #66bf55;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#sidebar2 .content h6 {
+	margin: 0;
+	color: #b2dc3f;
+	font-size:22px;
+	line-height: 28px;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#sidebar2 .content .contentText {
+	margin: 0;
+	margin-top:10px;
+	margin-right:20px;
+}
+#sidebar2 .content .titleBg1 {
+	margin: 0;
+	height:30px;
+	background: url(images/titleBar_01.jpg) no-repeat;
+}
+#sidebar2 .content .titleBg1 .titleName {
+	margin-left:20px;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#sidebar2 .content .button1 {
+	float:right;
+	width:100px;
+	text-align:center;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, "Times New Roman", Times, serif;
+	display:block;
+	line-height:25px;
+	border-top: 5px solid #e5e5e5;
+	border-left: 5px solid #e5e5e5;
+	background-color:#66bf55;
+}
+#sidebar2 .content .button1 a, #sidebar2 .content .button1 a:link, #sidebar2 .content .button1 a:visited {
+	color:#FFF;
+}
+#sidebar2 .content .button1 a:hover, #sidebar2 .content .button1 a.navOn {
+	background-color: #46833b;
+	color: #FFF;
+	display: block;
+}
+
+#mainContent {
+	margin: 20px 0 0 0px; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
+	padding: 0 0 0px 0; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+.productBG {
+	background-color:#FFF;
+}
+	
+.productBG .titleBg3 {
+	margin: 0;
+	height:30px;
+	background: url(images/titleBar_03.jpg) no-repeat;
+}
+.productBG .titleBg4 {
+	margin: 0;
+	height:30px;
+	background: url(images/titleBar_04.jpg) no-repeat;
+}
+
+.productBG .titleBg3 .titleName {
+	margin-left:20px;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+.productBG .titleBg4 .titleName {
+	margin-left:20px;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+.productBG .button1 {
+	float:right;
+	width:100px;
+	text-align:center;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, "Times New Roman", Times, serif;
+	display:block;
+	line-height:25px;
+	border-top: 5px solid #e5e5e5;
+	border-left: 5px solid #e5e5e5;
+	background-color:#66bf55;
+}
+.productBG .button1 a, .productBG .button1 a:link, .productBG .button1 a:visited {
+	color:#FFF;
+}
+.productBG .button1 a:hover, .productBG .button1 a.navOn {
+	background-color: #46833b;
+	color: #FFF;
+	display: block;
+}
+.detailsLink {
+	margin: 10px 0px;
+	width: 60px;
+	float: left;
+
+}
+.detailsLink a:link, .detailsLink a:visited {
+	display: block;
+	padding: 5px;
+	color: #FFF;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #f7941d;
+}
+.detailsLink a:hover {
+	padding: 5px;	
+	color: #FFF;
+	background-color:#46833b;
+}
+.arrow {
+	line-height: 1.5em;
+}
+.pic {
+	border: 1px #CCC solid;
+}
+.picContent {
+	border: 1px #CCC solid;
+	margin: 10px;
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+	height:0px;
+	font-size: 1px;
+	line-height: 0px;
+}
+/* Home Page */
+
+#homeImgContainer {
+	width: 538px;
+	margin: 12px 12px 12px 233px;
+	padding: 0; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #FFF;
+}
+#homeImgContainer .homeImg {
+	width: auto;
+	padding: 0 20px 0 0;
+	margin: 0;
+	overflow:hidden;
+	line-height: 1.5em;
+	background-color: #fff;
+}
+#homeImgContainer .homeImg .pic {
+	border: none;
+	float: left;
+	display: inline;
+	margin: 0 18px 0 0;
+}
+#homeImgContainer h1 {
+	line-height: 1.2em;
+	margin: 60px 12px 20px 0;
+	text-align: right;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#homeImgContainer h1 .text2 {
+	color: #5790de;
+}
+/* Inside Page */
+
+#insidPageContainer {
+	margin: 12px 0px 0px 0px;
+	padding: 0; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+}
+
+
+
+#mainContent .catPicBox {
+	padding: 0;
+	height:205px;
+	overflow: hidden;
+}
+#mainContent .catPicBox li {
+	float: left;
+	display: inline;
+	margin: 0 20px 20px 0; 
+	height: 157px;
+}
+#mainContent .catPicBox .pic {
+	float: left;
+	margin: 0 12px 0 0;
+}
+#mainContent .catPicBox .text {
+	margin: 0;
+	display: block;
+}
+#mainContent .catPicBox h4 {
+	margin: 0px 0;
+	font-family: Arial, "Times New Roman", Times, serif;
+	font-size:12px;
+	color: #c5db3e;
+}
+#mainContent .catPicBox .contentText {
+	margin: 0;
+	margin-top:10px;
+	margin-right:20px;
+	font-size:12px;
+	font-family: Arial, "Times New Roman", Times, serif;
+	color:#666666;
+}
+#mainContent .catPicBox .text a, #mainContent .catPicBox .text a:link, #mainContent .catPicBox .text a:visited {
+	color: #333;
+}
+#mainContent .catPicBox .text a:hover {
+	color: #46833b;
+}
+#mainContent .itemContent {
+	margin: 12px 12px 12px 20px;
+	overflow: hidden;
+}
+#mainContent .itemContent .pic {
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+#mainContent .otherContent {
+	margin: 12px 20px 12px 20px;
+}
+#mainContent .otherContent .pic {
+	margin: 0 12px 12px 12px;
+}
+.backLink {
+	text-align: right;
+	overflow: hidden;
+	margin: 15px 0;
+}
+.backLink a, .backLink a:link, .backLink a:visited {
+	display: block;
+	padding: 5px 15px 5px 0px;
+	background-color: #ecf2f9;
+}
+.backLink a:hover { 
+	padding: 5px 15px 5px 0px;
+	
+	color: #FFF;
+	background-color:#5790de;
+}
+/* Contact Page */
+.contactBg {
+	height: 80px;
+	color: #FFF;
+	padding: 20px;
+	background: #4d4d4d;
+}
+.contactBg2 {
+	color: #FFF;
+	padding: 20px;
+	background: #6f6f6f;
+}
+.contactBg2 a, .contactBg2 a:link, .contactBg2 a:visited {
+	color: #fff
+}
+.contactFormText .header {
+	padding-top: 15px;
+	border-bottom: 1px dotted #5790de;
+}
+.contactFormText label {
+	width: 120px;
+}
+.contactFormText input {
+	width: 300px;
+}
+.contactFormText .comment {
+	height: 100px;
+	width: 400px;
+}
+.contactFormText .submitBtn {
+	border: none;
+	width: 60px;
+	color: #FFF;
+	padding: 5px 0;
+	background: #b2dc3f;
+}
+.contactFormText .resetBtn {
+	border: none;
+	width: 60px;
+	color: #000;
+	padding: 5px 0;
+	background: #999;
+}
+.contactFormText h4 {
+	font-size: 12px;
+	color: #1c5fb9;
+}
+.contactFormText .info1 {
+	width: 150px;	
+}
+.contactFormText .info2 {
+	width: 415px;	
+}
+.contactFormText .info3 {
+	width: 40px;	
+}
+.contactFormText .info4 {
+	width: 400px;	
+}
+.contactFormText .info5 {
+	width: 200px;	
+}
+.contactFormText .info6 {
+	width: 80px;	
+}
+.contactFormText #gender {
+	width: 20px;
+}
+
+
+
+/* product */
+#productSidebar1 {
+	width: 260px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #ebfcbb; /* the background color will be displayed for the length of the content in the column, but no further */
+	height:611px;
+}
+#productSidebar1 .content {
+	margin: 0;
+}
+#productSidebar1 .content .catTitleBG {
+	margin: 0;
+	width:260px;
+	height:80px;
+	background: url(images/leftCatTitleBG.jpg) no-repeat;
+}
+#productSidebar1 .content .catTitleBG .Title {
+	margin-left: 20px;
+	font-size:36px;
+	font-family: Arial, "Times New Roman", Times, serif;
+	color:#FFF;
+}
+#productSidebar1 .content .catTitleBG h3 {
+	margin: 0;
+	color:#FFF;
+	font-size:14px;
+	margin-left: 20px;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#productSidebar1 .categoryNav {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#productSidebar1 .categoryNav li {
+	margin: 0;
+	margin-left:20px;
+	line-height: 23px;
+	display: block;
+	border-bottom: 1px solid #e5e5e5;
+}
+#productSidebar1 .categoryNav li a, #productSidebar1 .categoryNav li a:link, #productSidebar1 .categoryNav li a:visited {
+	color: #666;
+	padding: 0 0px 0px 0px;
+}
+#productSidebar1 .categoryNav li a:hover, #productSidebar1 .categoryNav li a.navOn {
+	color: #333;
+	padding: 0 0px 0 0px;
+}
+
+
+
+
+
+
+#productsidebar2 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 620px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	 /* the background color will be displayed for the length of the content in the column, but no further */
+	height: 135px;
+}
+#productsidebar2 .content {
+	line-height: 18px;
+	margin: 0px 0px 0px 0px;
+}
+#productsidebar2 .content h4 {
+	margin: 0;
+	color: #b2dc3f;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#productsidebar2 .content .contentText {
+	margin: 0;
+	margin-top:10px;
+	margin-right:20px;
+}
+#productsidebar2 .content .titleBg1 {
+	margin: 0;
+	height:30px;
+	background: url(images/titleBar_01.jpg) no-repeat;
+}
+#productsidebar2 .content .titleBg1 .titleName {
+	margin-left:20px;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#productsidebar2 .content .button1 {
+	float:right;
+	width:100px;
+	text-align:center;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, "Times New Roman", Times, serif;
+	display:block;
+	line-height:25px;
+	border-top: 5px solid #e5e5e5;
+	border-left: 5px solid #e5e5e5;
+	background-color:#66bf55;
+}
+#productsidebar2 .content .button1 a, #productsidebar2 .content .button1 a:link, #productsidebar2 .content .button1 a:visited {
+	color:#FFF;
+}
+#productsidebar2 .content .button1 a:hover, #productsidebar2 .content .button1 a.navOn {
+	background-color: #46833b;
+	color: #FFF;
+	display: block;
+}
+
+
+/* about */
+#aboutSidebar1 {
+	width: 260px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	background: #ebfcbb; /* the background color will be displayed for the length of the content in the column, but no further */
+	height:411px;
+}
+#aboutSidebar1 .content {
+	margin: 0;
+}
+#aboutSidebar1 .content .catTitleBG {
+	margin: 0;
+	width:260px;
+	height:80px;
+	background: url(images/leftCatTitleBG.jpg) no-repeat;
+}
+#aboutSidebar1 .content .catTitleBG .Title {
+	margin-left: 20px;
+	font-size:36px;
+	font-family: Arial, "Times New Roman", Times, serif;
+	color:#FFF;
+}
+#aboutSidebar1 .content .catTitleBG h3 {
+	margin: 0;
+	color:#FFF;
+	font-size:14px;
+	margin-left: 20px;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#aboutSidebar1 .categoryNav {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#aboutSidebar1 .categoryNav li {
+	margin: 0;
+	margin-left:20px;
+	line-height: 23px;
+	display: block;
+	border-bottom: 1px solid #e5e5e5;
+}
+#aboutSidebar1 .categoryNav li a, #aboutSidebar1 .categoryNav li a:link, #aboutSidebar1 .categoryNav li a:visited {
+	color: #666;
+	padding: 0 0px 0px 0px;
+}
+#aboutSidebar1 .categoryNav li a:hover, #aboutSidebar1 .categoryNav li a.navOn {
+	color: #333;
+	padding: 0 0px 0 0px;
+}
+
+
+
+
+
+
+#aboutSidebar2 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 620px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	 /* the background color will be displayed for the length of the content in the column, but no further */
+	 margin:0;
+}
+#aboutSidebar2 .otherContent .info1 {
+	width: 150px;	
+}
+#aboutSidebar2 .otherContent .info2 {
+	width: 415px;	
+}
+#aboutSidebar2 .otherContent .info3 {
+	width: 40px;	
+}
+#aboutSidebar2 .otherContent .info4 {
+	width: 400px;	
+}
+#aboutSidebar2 .otherContent .info5 {
+	width: 200px;	
+}
+#aboutSidebar2 .otherContent .info6 {
+	width: 80px;	
+}
+
+#aboutSidebar2 .content {
+	line-height: 18px;
+	margin: 0px 0px 0px 0px;
+}
+#aboutSidebar2 .content h4 {
+	margin: 0;
+	color: #b2dc3f;
+	font-family: Arial, "Times New Roman", Times, serif;
+}
+#aboutSidebar2 .content .contentText {
+	margin: 0;
+	margin-top:10px;
+	margin-right:20px;
+}
+#aboutSidebar2 .content .titleBg1 {
+	margin: 0;
+	height:30px;
+	background: url(images/titleBar_01.jpg) no-repeat;
+}
+#aboutSidebar2 .content .titleBg1 .titleName {
+	margin-left:20px;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	font-family: Arial, "Times New Roman", Times, serif;
+}

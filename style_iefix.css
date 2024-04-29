@@ -1,0 +1,4 @@
+/* place css fixes for all versions of IE in this conditional comment */
+ #sidebar2,  #sidebar1 { margin-top: 12px; }
+ #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
