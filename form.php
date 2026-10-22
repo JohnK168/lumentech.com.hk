@@ -1,5 +1,5 @@
-﻿<?php
-include("./captcha/captcha.php");
+//﻿<?php
+//include("./captcha/captcha.php");
 
 if (session_id() == "") session_start();
 $isSent = isset($_GET["s"]) ? $_GET["s"] : "";
@@ -690,4 +690,5 @@ function checkEmail(myForm)
   <!-- end #footerContainer -->
 </div>
 </body>
-</html>
+</html>//
+//
