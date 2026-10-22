@@ -1,4 +1,4 @@
-<?php
+//<?php
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 //Declaration  ////////////////////////////////////////////////////
@@ -227,4 +227,4 @@ function returnField( $fieldname, $str )
       return ( $str == "" ? "" : "<b>" .ucfirst($fieldname) . "</b> : " . $str ."<br>" );
 }
 
-?>
+?>//
