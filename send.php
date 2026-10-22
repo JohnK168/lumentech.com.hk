@@ -3,9 +3,9 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 //Declaration  ////////////////////////////////////////////////////
 //Usage of Sending Mail 
-define("ST_EMAIL_RECEIVE", "kwanhc@lumentech.com.hk");           //Email address of receiver
-define("ST_EMAIL_SUBJECT", "Lumentech Company Limited - Customer contact information");     //Email Subject title
-define("ST_SFA", "15710771" );                                //SFA no.
+//define("ST_EMAIL_RECEIVE", "kwanhc@lumentech.com.hk");           //Email address of receiver
+//define("ST_EMAIL_SUBJECT", "Lumentech Company Limited - Customer contact information");     //Email Subject title
+//define("ST_SFA", "15710771" );                                //SFA no.
 
 
 session_start();
